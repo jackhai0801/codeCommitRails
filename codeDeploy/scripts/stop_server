@@ -1,0 +1,5 @@
+#!/bin/bash
+# su -l ec2-user -c 'sudo chown -R root /var/www/rails_hello'
+
+# su -l ec2-user -c 'sudo kill -KILL -s QUIT `cat /var/www/rails_hello/tmp/pids/server.pid`'
+sudo kill -KILL -s QUIT `cat /var/www/rails_hello/tmp/pids/server.pid`

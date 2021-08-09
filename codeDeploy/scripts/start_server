@@ -1,0 +1,5 @@
+#!/bin/bash
+# su -l ec2-user -c 'sudo chown -R ec2-user /var/www/rails_hello'
+su -l ec2-user -c 'cd /var/www/rails_hello && bundle install'
+su -l ec2-user -c 'cd /var/www/rails_hello && bundle exec rake db:migrate'
+su -l ec2-user -c 'cd /var/www/rails_hello && bundle exec rails s -d -b 0.0.0.0 -p 3000'

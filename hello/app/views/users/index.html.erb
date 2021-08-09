@@ -1,0 +1,15 @@
+<h2>Hello, World</h2>
+<h2>
+    <%= 110 + 1 %>
+</h2>
+<p>
+    <%= @num %>
+</p>
+
+<ul>
+    <% @users.each do |user| %>
+        <li>
+            <%= user.id %>, <%= user.name %>, <%= user.age %>
+        </li>
+    <% end %>
+</ul>
